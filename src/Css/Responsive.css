@@ -1,0 +1,9 @@
+@media screen and (max-width: 999px) {
+    .list-1:not(.logo), .list-2 {
+        display: none;
+    }
+
+    .offCanvas {
+        display: flex;
+    }
+}

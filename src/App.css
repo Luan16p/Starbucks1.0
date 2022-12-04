@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a, li {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo2 {
+  width: 120px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 12vh;
+  flex-wrap: nowrap;
+}
+
+.list-1 {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  gap: 20px;
+}
+
+.list-1 a, .list-2 a {
+  font-weight: 550;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: 'Karla', sans-serif;
+}
+
+.list-2 {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  gap: 20px;
+}
+
+.list-1 a:hover {
+  color: #008248;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+#entrar, #p_agora {
+  padding: 5px 17px;
+  border-radius: 50px;
+  text-transform: none !important;
+  transition: .2s ease-in-out;
+}
+
+#entrar {
+  border: 2px solid #000;
+}
+
+#entrar a {
+  color: #000;
+}
+
+#p_agora, #p_agora a {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#entrar:hover, #p_agora:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 2px 6px rgb(61, 61, 61);
+  border: 1px solid #000;
+}
+
+
+.apresentation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d4e9e2 ; 
+  text-align: center;
+  gap: 5px;
+}
+
+.btn {
+  border-radius: 50px !important;
+  font-weight: 500 !important;
+  transition: .2s !important;
+}
+
+.txt {
+  font-size: 17px;
+  font-family: 'Karla', sans-serif;
+  max-width: 600px;
+  margin: 5px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.offCanvas {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+#offCanvas_btn {
+  width: 32px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-single {
+  display: flex;
+}
+
+.card-single img {
+  width: 50%;  
+  height: 50%;
+  user-select: none;
+
+}
+
+.box-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #d4e9e2;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-text h2 {
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+.box-text p {
+  margin: 5px;
+  font-size: 17px;
+  font-family: 'Karla', sans-serif;
+}
+
+footer {
+  height: 40vh;
+  padding: 20px 0px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  height: inherit;
+}
+
+.columns > .lines > .title {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  color: #32312d;
+  font-weight: 500;
+}
+
+.lines {
+  width: calc(100vw/6); /* N de colunas */ 
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.links {
+  display: flex;
+  flex-direction: inherit;
+  gap: 5px;
+}
+
+.link-footer {
+  word-break: break-all;
+  color: rgba(0,0,0,.56);
+  font-size: 15px;
+  transition: ease-in-out;
+}
+
+.link-footer:hover {
+  color: rgba(0,0,0,.87)
+}
+
+.medias {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  gap: 30px;
+}
+
+.line__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: start;
+}
+
+.icons:has(.icon) .icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: .2s;
+}
+
+.icons:has(.icon) .icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 5px #959695);
+}
+
+.warnings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.warnings-warn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.warnings-warn h3 {
+  font-size: 13px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.warnings-warn h3:hover {
+  color:#a0a0a0;
+}
+
+.warnings-warn h3::after {
+  content: "|";
+  opacity: .8;
+  margin: 10px;
+}
